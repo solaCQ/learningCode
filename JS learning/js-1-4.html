@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<h1>Input a number between 10 and 20</h1>
+
+<input id = "numb" style = "number">
+
+<button type = "button" onclick= "isRight()">submit</button>
+
+<p id = "demo"></p>
+
+<script>
+function isRight(){
+	var x,text;
+	x = document.getElementById("numb").value;
+	if (isNaN(x) || x < 10 || x > 20){
+	text = "input valid";
+	}else{
+	text = "input OK";
+	}
+	document.getElementById("demo").innerHTML = text;
+}
+</script> 
+
+</body>
+</html>
